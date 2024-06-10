@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수능2000_Beta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Word Master 2000 Beta.ver</h1>
+        <div class="range-inputs">
+            <label for="startInput">시작 Unit:</label>
+            <input type="number" id="startInput" min="1" max="50">
+            <label for="endInput">끝 Unit:</label>
+            <input type="number" id="endInput" min="1" max="50">
+            <button onclick="generateQuiz()" style="margin-top: 2.5%;">테스트 시작</button>
+        </div>
+        <div class="quiz-container"></div>
+        <center>
+            <button id="submitBtn" onclick="gradeQuiz()" style="display: none;">제출</button>
+        </center>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
